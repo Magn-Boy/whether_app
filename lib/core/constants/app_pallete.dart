@@ -3,11 +3,14 @@ import 'package:whether_app/core/constants/app_colors.dart';
 
 class AppPallete {
   static ThemeData darkTheme = ThemeData(
+    useMaterial3: true,
     brightness: Brightness.dark,
     scaffoldBackgroundColor: AppColors.darkTheme,
   );
+
   static ThemeData lightTheme = ThemeData(
+    useMaterial3: true,
     brightness: Brightness.light,
-    primaryColor: AppColors.lightTheme,
+    scaffoldBackgroundColor: AppColors.lightTheme,
   );
 }
