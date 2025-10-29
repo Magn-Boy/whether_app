@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:whether_app/features/historical_data/domain/entity/data_entity.dart';
 
 import '../../../../core/utils/type_defs.dart';
-import '../../../current_whether_forecast/data/model/whether_model.dart';
+import '../../../current_weather_forecast/data/model/whether_model.dart';
 
 class DataModel extends DataEntity {
   DataModel({

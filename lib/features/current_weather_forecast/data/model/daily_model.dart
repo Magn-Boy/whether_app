@@ -1,10 +1,10 @@
 import 'dart:convert';
 
-import 'package:whether_app/features/current_whether_forecast/data/model/temp_model.dart';
-import 'package:whether_app/features/current_whether_forecast/data/model/whether_model.dart';
-import 'package:whether_app/features/current_whether_forecast/domain/entity/daily_entity.dart';
+import 'package:whether_app/features/current_weather_forecast/data/model/temp_model.dart';
+import 'package:whether_app/features/current_weather_forecast/data/model/whether_model.dart';
 
 import '../../../../core/utils/type_defs.dart';
+import '../../domain/entity/daily_entity.dart';
 
 class DailyModel extends DailyEntity {
   DailyModel({required super.dt, required super.temp, required super.weather});

@@ -1,12 +1,12 @@
 import 'package:dio/dio.dart';
 import 'package:whether_app/core/error/exception.dart';
+import 'package:whether_app/features/current_weather_forecast/domain/entity/current_wf_entity.dart';
 
 import '../../../core/constants/endpoints.dart';
-import '../domain/entity/weather_overview_entity.dart';
-import 'model/weather_overview_model.dart';
+import 'model/current_wf_model.dart';
 
-abstract class WeatherOverviewDataSource {
-  Future<WeatherOverviewEntity> historicalData(
+abstract class CurrentWfDataSource {
+  Future<CurrentWfEntity> currentWf(
     double lat,
     double lon,
     String units,
@@ -14,13 +14,13 @@ abstract class WeatherOverviewDataSource {
   );
 }
 
-class WeatherOverviewImplementation implements WeatherOverviewDataSource {
-  const WeatherOverviewImplementation(this._dio);
+class CurrentWfDataSourceImplementation implements CurrentWfDataSource {
+  const CurrentWfDataSourceImplementation(this._dio);
 
   final Dio _dio;
 
   @override
-  Future<WeatherOverviewEntity> historicalData(
+  Future<CurrentWfEntity> currentWf(
     double lat,
     double lon,
     String units,
@@ -28,7 +28,7 @@ class WeatherOverviewImplementation implements WeatherOverviewDataSource {
   ) async {
     try {
       final response = await _dio.get(
-        Endpoints.historicalDate,
+        Endpoints.currentWf,
         queryParameters: {
           'lat': lat,
           'lon': lon,
@@ -44,8 +44,8 @@ class WeatherOverviewImplementation implements WeatherOverviewDataSource {
         );
       }
 
-      final weatherOverview = WeatherOverviewModel.fromJson(response.data);
-      return weatherOverview;
+      final currentWf = CurrentWfModel.fromJson(response.data);
+      return currentWf;
     } on DioException catch (e) {
       throw APIException(
         message: e.message,

@@ -1,5 +1,5 @@
-import 'package:whether_app/features/current_whether_forecast/domain/entity/temp_entity.dart';
-import 'package:whether_app/features/current_whether_forecast/domain/entity/whether_entity.dart';
+import 'package:whether_app/features/current_weather_forecast/domain/entity/temp_entity.dart';
+import 'package:whether_app/features/current_weather_forecast/domain/entity/whether_entity.dart';
 
 class DailyEntity {
   final int dt;

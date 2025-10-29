@@ -1,11 +1,10 @@
 import 'dart:convert';
 
-import 'package:whether_app/features/current_whether_forecast/data/model/daily_model.dart';
-import 'package:whether_app/features/current_whether_forecast/data/model/hourly_model.dart';
-import 'package:whether_app/features/current_whether_forecast/domain/entity/current_wf_entity.dart';
-
 import '../../../../core/utils/type_defs.dart';
+import '../../domain/entity/current_wf_entity.dart';
 import 'current_model.dart';
+import 'daily_model.dart';
+import 'hourly_model.dart';
 
 class CurrentWfModel extends CurrentWfEntity {
   CurrentWfModel({

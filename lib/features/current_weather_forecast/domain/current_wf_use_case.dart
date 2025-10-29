@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
-import 'package:whether_app/features/current_whether_forecast/domain/current_wf_repository.dart';
-import 'package:whether_app/features/current_whether_forecast/domain/entity/current_wf_entity.dart';
 
 import '../../../core/utils/use_case.dart';
+import 'current_wf_repository.dart';
+import 'entity/current_wf_entity.dart';
 
 class CurrentWfUseCase
     extends UseCaseWithParams<CurrentWfEntity, CurrentWfParams> {

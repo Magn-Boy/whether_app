@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:whether_app/features/current_whether_forecast/data/model/whether_model.dart';
 import 'package:whether_app/features/daily_summary/data/model/precipitation_model.dart';
 import 'package:whether_app/features/daily_summary/data/model/temperature_model.dart';
 import 'package:whether_app/features/daily_summary/data/model/wind_model.dart';
 
 import '../../../../core/utils/type_defs.dart';
+import '../../../current_weather_forecast/data/model/whether_model.dart';
 import '../../domain/entity/daily_summary_entity.dart';
 
 class DailySummaryModel extends DailySummaryEntity {

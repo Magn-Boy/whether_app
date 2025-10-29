@@ -1,8 +1,7 @@
 import 'dart:convert';
 
-import 'package:whether_app/features/current_whether_forecast/domain/entity/whether_entity.dart';
-
 import '../../../../core/utils/type_defs.dart';
+import '../../domain/entity/whether_entity.dart';
 
 class WeatherModel extends WeatherEntity {
   WeatherModel({

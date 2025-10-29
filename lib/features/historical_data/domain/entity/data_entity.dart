@@ -1,4 +1,4 @@
-import 'package:whether_app/features/current_whether_forecast/domain/entity/whether_entity.dart';
+import '../../../current_weather_forecast/domain/entity/whether_entity.dart';
 
 class DataEntity {
   final int dt;

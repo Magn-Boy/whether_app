@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:whether_app/features/current_whether_forecast/data/model/whether_model.dart';
+import 'package:whether_app/features/current_weather_forecast/data/model/whether_model.dart';
 
 import '../../../../core/utils/type_defs.dart';
 import '../../domain/entity/current_entity.dart';

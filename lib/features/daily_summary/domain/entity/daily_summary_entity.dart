@@ -1,7 +1,8 @@
-import 'package:whether_app/features/current_whether_forecast/domain/entity/whether_entity.dart';
 import 'package:whether_app/features/daily_summary/domain/entity/precipitation_entity.dart';
 import 'package:whether_app/features/daily_summary/domain/entity/temperature_entity.dart';
 import 'package:whether_app/features/daily_summary/domain/entity/wind_entity.dart';
+
+import '../../../current_weather_forecast/domain/entity/whether_entity.dart';
 
 class DailySummaryEntity {
   final double lat;

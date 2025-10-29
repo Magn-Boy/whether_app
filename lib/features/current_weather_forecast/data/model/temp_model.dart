@@ -1,8 +1,7 @@
 import 'dart:convert';
 
-import 'package:whether_app/features/current_whether_forecast/domain/entity/temp_entity.dart';
-
 import '../../../../core/utils/type_defs.dart';
+import '../../domain/entity/temp_entity.dart';
 
 class TempModel extends TempEntity {
   TempModel({required super.day, required super.min, required super.max});
